@@ -1,18 +1,16 @@
 
 class Solution(object):
-    def isValid(self, s):
+    def isValid(self, string):
         stack = []
-        closetopen = {')' : '(', '}' : '{' , ']' : '['}
+        opening_brackets = "([{"
+        closing_brackets = ")]}"
+        bracket_pairs = {")": "(", "]": "[", "}": "{"}
 
-        for char in s:
-            if char in closetopen:
-                if stack and stack[-1] == closetopen[char]:
-                    stack.pop()
-                else:
-                    return False
-            else:
+        for char in string:
+            if char in opening_brackets:
                 stack.append(char)
-        return True if not stack else False 
-    
-sol = Solution()
-print(sol.isValid('()[]{}'))
+            elif char in closing_brackets:
+                if not stack or stack.pop() != bracket_pairs[char]:
+                    return False
+
+        return not stack
