@@ -1,0 +1,28 @@
+body {
+    font-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: bisque;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    opacity: 0.9;
+    overflow: auto;
+    border: 1px solid #575656;
+    height: 750px;
+}
+
+.child {
+    background: #d3c06a;
+    display: inline-block;
+    width: 370px;
+    border: 1px solid #8f8b8b;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 10px;
+    box-shadow: inset 0px 1px 10px;
+}
