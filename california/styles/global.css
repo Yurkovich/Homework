@@ -1,0 +1,51 @@
+:root {
+    --general-bg: #FFF;
+    --general-text: #000;
+    --accent-color: #DCE5E2;
+    --transition: all .4s;
+}
+
+body {
+    font-family: 'Inter 18pt';
+    line-height: 1.5;
+    color: var(--general-text);
+    background: var(--general-bg);
+    box-sizing: border-box;
+    min-width: 425px;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.button {
+    padding: 14px 53px;
+    border: 1px solid var(--general-text);
+    border-radius: 200px;
+
+    transition: var(--transition);
+}
+
+.button:hover {
+    background-color: var(--general-text);
+    color: var(--general-bg);
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}

@@ -1,0 +1,75 @@
+.main__looking {
+    margin-bottom: 75px;
+}
+
+.looking {}
+
+.looking__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.looking__title {
+    text-align: center;
+    font-family: "Readex Pro";
+    font-size: 42px;
+    line-height: 1.25;
+
+    margin-bottom: 24px;
+}
+
+.looking__input {
+    padding: 21px 67px;
+    border-radius: 100px;
+    border: 1px solid #C5C5C5;
+    
+    font-size: 14px;
+
+    background: #F8F9FA;
+    background-image: url(/img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: 17px 17px;
+
+    max-width: 650px;
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+.looking__input::placeholder {
+    color: var(--general-text);
+}
+
+.looking__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    max-width: 580px;
+    justify-content: center;
+}
+
+.looking__item {
+    display: flex;
+}
+
+.looking__link {
+    padding: 12px 22px;
+    border-radius: 200px;
+    border: 1px solid #C5C5C5;
+
+    background: #FFF;
+    transition: var(--transition);
+}
+
+.looking__link:hover {
+    background-color: var(--general-text);
+    color: var(--general-bg);
+}
+
+.looking__link a {
+    font-size: 14px;
+    line-height: 1.2;
+}

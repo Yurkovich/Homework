@@ -1,0 +1,40 @@
+.footer {
+    margin-bottom: 70px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__col {}
+
+.footer__col-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer__col-item {
+    max-width: 304px;
+}
+
+.footer__col-item svg {
+    margin-bottom: 18px;
+}
+
+.footer__col-item p {
+    font-family: 'Inter 18pt';
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.footer__col-title {
+    font-family: "Readex Pro";
+    font-size: 22px;
+    line-height: 1.25;
+
+    margin-bottom: 19px;
+}
+
+.footer__col-link {}

@@ -1,0 +1,69 @@
+.main__best {
+    margin-bottom: 75px;
+}
+
+.best {}
+.best__wrapper {}
+
+.best__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 97px;
+}
+
+.best__title {
+    font-family: "Readex Pro";
+    font-size: 42px;
+    line-height: 1.25;
+
+    margin-bottom: 9px;
+}
+
+.best__text {
+    font-family: "Readex Pro";
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.best__body {}
+
+.best__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.best__item {}
+
+.best__item-text {
+    text-align: center;
+    font-family: "Readex Pro";
+    font-size: 13px;
+    line-height: 1.3;
+}
+.best__item-title {
+    text-align: center;
+    font-family: "Readex Pro";
+    font-size: 28px;
+    line-height: 1.25;
+
+    margin-bottom: 30px;
+}
+
+.best__item-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.best__item-button {}
+.best__item-img {
+    max-width: 355px;
+    max-height: 250px;
+}

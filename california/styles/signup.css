@@ -1,0 +1,73 @@
+.main__signup {
+    margin-bottom: 63px;
+}
+
+.signup {}
+
+.signup__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signup__inner {
+    background: var(--accent-color);
+    padding: 47px 15px 43px 15px;
+    max-width: 935px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+.signup__title {
+    font-family: "Readex Pro";
+    font-size: 42px;
+    line-height: 1.25;
+
+    margin-bottom: 9px;
+}
+
+.signup__text {
+    font-family: 'Inter 18pt';
+    font-size: 16px;
+    line-height: 1.2;
+
+    margin-bottom: 14px;
+}
+
+.signup__img {
+    margin-bottom: 14px;
+}
+
+.signup__button {
+    text-align: center;
+    font-family: 'Inter 18pt';
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+}
+
+.signup__input {
+    padding: 16px 32px;
+
+    border-radius: 54px 0px 0px 54px;
+    border: 1px solid #000;
+    background: #DCE5E2;    
+}
+
+.signup__button-button {
+    padding: 16px 33px 17px 32px;
+
+    color: var(--general-bg);
+    border-radius: 0px 200px 200px 0px;
+    background: #000;
+    transition: var(--transition);
+}
+
+.signup__button-button:hover {
+    background: var(--accent-color);
+    color: var(--general-text);
+}

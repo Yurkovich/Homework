@@ -1,0 +1,59 @@
+
+.main__welcome {
+    margin-bottom: 75px;
+}
+
+.welcome {}
+
+.welcome__wrapper {
+    background: var(--accent-color);
+    border-radius: 20px;
+}
+
+.welcome__inner {
+    display: grid;
+    grid-template-columns: .1fr 2fr 2fr .1fr;
+    align-items: center;
+    gap: 24px;
+    padding: 40px 18px 0 18px;
+}
+
+.welcome__pagination {}
+
+.welcome__pagination:last-child {
+    justify-self: flex-end;
+}
+
+.welcome__info {
+    padding-bottom: 40px;
+}
+
+.welcome__title {
+    margin-bottom: 19px;
+}
+
+.welcome__title {
+    font-family: "Readex Pro";
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+.welcome__text {
+    font-family: 'Inter 18pt';
+    font-size: 16px;
+    line-height: 1.2;
+
+    margin-bottom: 44px;
+}
+
+.welcome__button {}
+
+.welcome__img {
+    max-width: 400px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.welcome__img img {
+    width: 100%;
+}
