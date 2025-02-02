@@ -164,7 +164,7 @@
 
     /* ================= */
 
-    .welcome__inner {
+    .welcome__slide {
         grid-template-columns: .3fr 1fr .3fr;
     }
 

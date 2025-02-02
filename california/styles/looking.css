@@ -55,7 +55,7 @@
     display: flex;
 }
 
-.looking__link {
+.looking__button {
     padding: 12px 22px;
     border-radius: 200px;
     border: 1px solid #C5C5C5;
@@ -64,12 +64,12 @@
     transition: var(--transition);
 }
 
-.looking__link:hover {
+.looking__button:hover {
     background-color: var(--general-text);
     color: var(--general-bg);
 }
 
-.looking__link a {
+.looking__button button {
     font-size: 14px;
     line-height: 1.2;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>California</title>
     <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/swiper-bundle.min.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
 </head>
 
@@ -59,7 +60,7 @@
                             <li class="nav__item">
                                 <a class="nav__link" href="#">All products</a>
                             </li>
-                            <li class="nav__item">
+                            <li class="nav__item has-dropdown">
                                 <a class="nav__link" href="#">
                                     Solutions
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
@@ -74,6 +75,23 @@
                                         </defs>
                                     </svg>
                                 </a>
+                                <ul class="dropdown">
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Solution 1
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Solution 2
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            Solution 3
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="#">About</a>
@@ -135,52 +153,146 @@
         <main class="main">
             <section class="main__welcome welcome">
                 <div class="container">
-                    <div class="welcome__wrapper">
-                        <div class="welcome__inner">
-                            <a class="welcome__pagination" href="#">
-                                <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="IMAGE" clip-path="url(#clip0_1_54)">
-                                        <path id="Vector" d="M13 25L1 13L13 1" stroke="#08090D" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_54">
-                                            <rect width="14" height="26" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
-                            </a>
-                            <div class="welcome__info">
-                                <h2 class="welcome__title title">
-                                    The new phones are here take a look.
-                                </h2>
-                                <p class="welcome__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
-                                    aliquam, tempor. Faucibus morbi turpis.
-                                </p>
-                                <a class="welcome__button button" href="#">
-                                    Explore
+                    <div class="welcome__slider swiper">
+                        <div class="welcome__wrapper swiper-wrapper">
+                            <div class="welcome__slide welcome__slide-1 swiper-slide">
+                                <a class="welcome__prev" href="#">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="IMAGE" clip-path="url(#clip0_1_54)">
+                                            <path id="Vector" d="M13 25L1 13L13 1" stroke="#08090D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_54">
+                                                <rect width="14" height="26" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+        
+                                </a>
+                                <div class="welcome__info">
+                                    <h2 class="welcome__title title">
+                                        The new phones are here take a look.
+                                    </h2>
+                                    <p class="welcome__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.
+                                    </p>
+                                    <a class="welcome__button button" href="#">
+                                        Explore
+                                    </a>
+                                </div>
+                                <div class="welcome__img">
+                                    <img src="img/header/phones.png" alt="Phones">
+                                </div>
+                                <a class="welcome__next" href="#">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="IMAGE" clip-path="url(#clip0_1_56)">
+                                            <path id="Vector" d="M1 1L13 13L1 25" stroke="#08090D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_56">
+                                                <rect width="14" height="26" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                 </a>
                             </div>
-                            <div class="welcome__img">
-                                <img src="img/header/phones.png" alt="Phones">
+                            <div class="welcome__slide welcome__slide-2 swiper-slide">
+                                <a class="welcome__prev" href="#">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="IMAGE" clip-path="url(#clip0_1_54)">
+                                            <path id="Vector" d="M13 25L1 13L13 1" stroke="#08090D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_54">
+                                                <rect width="14" height="26" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+        
+                                </a>
+                                <div class="welcome__info">
+                                    <h2 class="welcome__title title">
+                                        The new phones are here take a look.
+                                    </h2>
+                                    <p class="welcome__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.
+                                    </p>
+                                    <a class="welcome__button button" href="#">
+                                        Explore
+                                    </a>
+                                </div>
+                                <div class="welcome__img">
+                                    <img src="img/header/phones.png" alt="Phones">
+                                </div>
+                                <a class="welcome__next" href="#">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="IMAGE" clip-path="url(#clip0_1_56)">
+                                            <path id="Vector" d="M1 1L13 13L1 25" stroke="#08090D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_56">
+                                                <rect width="14" height="26" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
                             </div>
-                            <a class="welcome__pagination" href="#">
-                                <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="IMAGE" clip-path="url(#clip0_1_56)">
-                                        <path id="Vector" d="M1 1L13 13L1 25" stroke="#08090D" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_56">
-                                            <rect width="14" height="26" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
+                            <div class="welcome__slide welcome__slide-3 swiper-slide">
+                                <a class="welcome__prev" href="#">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="IMAGE" clip-path="url(#clip0_1_54)">
+                                            <path id="Vector" d="M13 25L1 13L13 1" stroke="#08090D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_54">
+                                                <rect width="14" height="26" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+        
+                                </a>
+                                <div class="welcome__info">
+                                    <h2 class="welcome__title title">
+                                        The new phones are here take a look.
+                                    </h2>
+                                    <p class="welcome__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.
+                                    </p>
+                                    <a class="welcome__button button" href="#">
+                                        Explore
+                                    </a>
+                                </div>
+                                <div class="welcome__img">
+                                    <img src="img/header/phones.png" alt="Phones">
+                                </div>
+                                <a class="welcome__next" href="#">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="IMAGE" clip-path="url(#clip0_1_56)">
+                                            <path id="Vector" d="M1 1L13 13L1 25" stroke="#08090D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_56">
+                                                <rect width="14" height="26" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,7 +312,7 @@
                             </p>
                         </div>
                         <div class="latest__body">
-                            <div class="latest__block latest__block-1">
+                            <a class="latest__block latest__block-1" href="#">
                                 <div class="latest__block-img">
                                     <img src="img/latest/laptop.jpg" alt="Laptop">
                                 </div>
@@ -212,8 +324,8 @@
                                         True Laptop Solution
                                     </h4>
                                 </div>
-                            </div>
-                            <div class="latest__block latest__block-2">
+                            </a>
+                            <a class="latest__block latest__block-2" href="#">
                                 <div class="latest__block-img">
                                     <img src="img/latest/strap.jpg" alt="Watch">
                                 </div>
@@ -225,8 +337,8 @@
                                         Not just stylisht
                                     </h4>
                                 </div>
-                            </div>
-                            <div class="latest__block latest__block-3">
+                            </a>
+                            <a class="latest__block latest__block-3" href="#">
                                 <div class="latest__block-img">
                                     <img src="img/latest/phones.jpg" alt="Phones">
                                 </div>
@@ -238,8 +350,8 @@
                                         Your day to day life
                                     </h4>
                                 </div>
-                            </div>
-                            <div class="latest__block latest__block-4">
+                            </a>
+                            <a class="latest__block latest__block-4" href="#">
                                 <div class="latest__block-info">
                                     <p class="latest__block-text">
                                         Tablet
@@ -251,7 +363,7 @@
                                 <div class="latest__block-img">
                                     <img src="img/latest/tablet.jpg" alt="Tablet">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -465,31 +577,31 @@
                         <input class="looking__input" type="text" placeholder="Search keyword">
                         <ul class="looking__list">
                             <li class="looking__item">
-                                <a class="looking__link" href="#">iPhone</a>
+                                <button class="looking__button">iPhone</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">Charger</a>
+                                <button class="looking__button">Charger</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">Gift</a>
+                                <button class="looking__button">Gift</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">Google Pixel 3</a>
+                                <button class="looking__button">Google Pixel 3</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">Keyboard</a>
+                                <button class="looking__button">Keyboard</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">13 Pro Max</a>
+                                <button class="looking__button">13 Pro Max</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">iPhone 12</a>
+                                <button class="looking__button">iPhone 12</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">Laptop</a>
+                                <button class="looking__button">Laptop</button>
                             </li>
                             <li class="looking__item">
-                                <a class="looking__link" href="#">Mobile</a>
+                                <button class="looking__button">Mobile</button>
                             </li>
                         </ul>
                     </div>
@@ -611,7 +723,7 @@
                                     Support
                                 </a>
                             </li>
-                        </ul>   
+                        </ul>
                     </div>
                     <div class="footer__col footer__col-4">
                         <ul class="footer__col-list">
@@ -639,7 +751,7 @@
                                     Contact
                                 </a>
                             </li>
-                        </ul>   
+                        </ul>
                     </div>
                     <div class="footer__col footer__col-5">
                         <ul class="footer__col-list">
@@ -667,12 +779,13 @@
                                     Youtube
                                 </a>
                             </li>
-                        </ul>   
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </div>
+    <script src="script/swiper-bundle.min.js"></script>
     <script src="script/main.js"></script>
 </body>
 

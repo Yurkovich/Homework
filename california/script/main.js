@@ -1,4 +1,6 @@
 
+        // Бургер
+
 document.addEventListener('click', burgerInit);
 document.addEventListener('keydown', handleKeydown);
 
@@ -17,3 +19,29 @@ function handleKeydown(e) {
         document.body.classList.remove('body--opened-menu');
     }
 }
+
+        // Слайдер
+
+new Swiper('.welcome__slider', {
+
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    rewind: true,
+
+    navigation: {
+        nextEl: '.welcome__next',
+        prevEl: '.welcome__prev',
+    },
+});
+
+        // Поиск в looking
+
+const input = document.querySelector('.looking__input');
+const lookingButtons = document.querySelectorAll('.looking__button');
+
+lookingButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        input.value = button.textContent;
+    });
+});

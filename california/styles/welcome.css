@@ -6,21 +6,33 @@
 .welcome {}
 
 .welcome__wrapper {
-    background: var(--accent-color);
     border-radius: 20px;
 }
 
-.welcome__inner {
+.welcome__slide {
     display: grid;
     grid-template-columns: .1fr 2fr 2fr .1fr;
     align-items: center;
     gap: 24px;
     padding: 40px 18px 0 18px;
+    border-radius: 20px;
+}
+
+.welcome__slide-1 {
+    background: var(--accent-color);
+}
+
+.welcome__slide-2 {
+    background: #E5E2DC;
+}
+
+.welcome__slide-3 {
+    background: #DADFE5;
 }
 
 .welcome__pagination {}
 
-.welcome__pagination:last-child {
+.welcome__next {
     justify-self: flex-end;
 }
 
