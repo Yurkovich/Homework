@@ -14,17 +14,250 @@
 
 /* ========================== */
 
-@keyframes hvr-bob {
+/* Основной контейнер */
+
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
     0% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
+        transform: translateY(0px);
     }
     50% {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
+        transform: translateY(-10px);
     }
     100% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Общие анимации */
+.nav__link,
+.welcome__button,
+.button,
+.footer__col-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.nav__link:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.welcome__button:hover,
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Анимации для слайдера */
+.welcome__slide {
+    animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome__info {
+    animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome__img {
+    animation: fadeInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome__img img {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Анимации для карточек товаров */
+.latest__block,
+.selled__link,
+.best__item {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.latest__block:hover,
+.selled__link:hover,
+.best__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.latest__block-img img,
+.selled__link-img img,
+.best__item-img img {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.latest__block:hover .latest__block-img img,
+.selled__link:hover .selled__link-img img,
+.best__item:hover .best__item-img img {
+    transform: scale(1.05);
+}
+
+/* Анимации для кнопок поиска */
+.looking__button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.looking__button:hover {
+    background: black;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Анимации для форм */
+.signup__input,
+.looking__input {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup__input:focus,
+.looking__input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0,123,255,0.2);
+}
+
+/* Анимации для иконок */
+.nav__buttons-link svg,
+.footer__col-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__buttons-link:hover svg {
+    transform: scale(1.1);
+    stroke: #007bff;
+}
+
+.footer__col-link:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+/* Анимации для заголовков */
+.title {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Анимации для текста */
+.welcome__text,
+.latest__text,
+.selled__text,
+.best__text,
+.ideas__text,
+.signup__text {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Анимации для изображений в секции идей */
+.ideas__img img {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ideas__img:hover img {
+    transform: scale(1.05);
+}
+
+/* Анимации для кнопки "See All" */
+.ideas__footer {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ideas__footer:hover {
+    transform: translateX(5px);
+}
+
+.ideas__footer svg {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ideas__footer:hover svg {
+    transform: rotate(45deg);
+}
+
+/* Анимации для мобильного меню */
+@media (max-width: 768px) {
+    .nav.active {
+        animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .burger-icon span {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .burger-icon.active span {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
